@@ -15,4 +15,4 @@ elif tamaño == 0:
 
 else:
         print("{} argument:".format(tamaño))
-        print("{}: {}".format(tamaño, arg[1]))
+        print("{}: {}".format(tamaño, argumentos[1]))
