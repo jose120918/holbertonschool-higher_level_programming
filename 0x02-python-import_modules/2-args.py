@@ -4,11 +4,12 @@ import sys
 argumentos = sys.argv
 tamaño = len(argumentos) - 1
 
+
 if tamaño > 1:
-    print(len(sys.argv), "arguments:")
+    print((tamaño), "arguments:")
     if __name__ == '__main__':
-        for iterador, argumento in enumerate(sys.argv):
-            print("{}: {}".format((iterador + 1), argumento))
+        for x in range(1, tamaño + 1):
+            print("{}: {}".format(x, argumentos[x]))
 
 elif tamaño == 0:
         print("{} arguments.".format(tamaño))
