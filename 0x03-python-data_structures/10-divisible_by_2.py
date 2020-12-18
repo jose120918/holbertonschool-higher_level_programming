@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
-    new_list = my_list
+    new_list = my_list[:]
     iterador = -1
     for cont in my_list:
         iterador += 1
