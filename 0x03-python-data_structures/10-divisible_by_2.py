@@ -8,3 +8,4 @@ def divisible_by_2(my_list=[]):
             new_list[iterador] = True
         else:
             new_list[iterador] = False
+    return new_list
