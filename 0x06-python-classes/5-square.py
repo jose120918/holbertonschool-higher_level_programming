@@ -3,8 +3,10 @@
 
 
 class Square:
+    """1 Attribute"""
+
     def __init__(self, size=0):
-         """[Constructor]
+        """[Constructor]
 
         Args:
             Size.
@@ -13,7 +15,7 @@ class Square:
 
     @property
     def size(self):
-         """[Constructor]
+        """[Constructor]
 
         Args:
             Size.
@@ -22,7 +24,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-         """[Constructor]
+        """[Constructor]
 
         Args:
             Size.
@@ -34,7 +36,7 @@ class Square:
         self.__size = value
 
     def area(self):
-         """[Constructor]
+        """[Constructor]
 
         Args:
             Size.
@@ -42,7 +44,7 @@ class Square:
         return self.__size*self.__size
 
     def my_print(self):
-         """[Constructor]
+        """[Constructor]
 
         Args:
             Size.
