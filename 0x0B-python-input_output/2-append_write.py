@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Función leer archivos"""
+"""Función escribir al final de archivos"""
 
 
 def append_write(filename="", text=""):
-    """Funcion basica para leer texto en UTF8"""
+    """Funcion basica para escribir al final del archivo"""
     with open(filename, 'a+', encoding='utf8') as filetext:
         filetext.write(text)
         return len(text)
