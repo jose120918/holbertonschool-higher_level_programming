@@ -78,7 +78,8 @@ class Rectangle(Base):
                 print('#', end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
+        '''Update the class Rectangle attributes'''
         if len(args) > 0:
             for i in range(0, len(args)):
                 if i == 0:
@@ -91,3 +92,22 @@ class Rectangle(Base):
                     self.__x = args[3]
                 elif i == 4:
                     self.__y = args[4]
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "width":
+                    self.__width = value
+                if key == "height":
+                    self.__height = value
+                if key == 'x':
+                    self.__x = value
+                if key == 'y':
+                    self.__y = value
+
+    def to_dictionary(self):
+        '''Returns the dictionary representation
+        of a Rectangle'''
+        new_dict = {'id': self.id, 'width': self.__width,
+                    'height': self.__height, 'x': self.__x, 'y': self.__y}
+        return new_dict
